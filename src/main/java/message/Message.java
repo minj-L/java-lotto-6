@@ -1,5 +1,7 @@
 package message;
 
+import util.BuyLotto;
+
 public enum Message {
     INPUT_COST_OF_LOTTO("구입금액을 입력해 주세요."),
     HOW_MUCH_BUY_LOTTO("개를 구매했습니다."),
@@ -17,7 +19,7 @@ public enum Message {
         return message;
     }
 
-    public String getButNumber(String buyNumber) {
-        return String.format("%s %s", buyNumber, this.HOW_MUCH_BUY_LOTTO.getMessage());
+    public String getBuyNumber(int buyNumber) {
+        return String.format("%s %s", BuyLotto.buyLotto(buyNumber), this.HOW_MUCH_BUY_LOTTO.getMessage());
     }
 }

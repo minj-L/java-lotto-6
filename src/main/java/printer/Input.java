@@ -3,6 +3,7 @@ package printer;
 import message.Message;
 
 import camp.nextstep.edu.missionutils.Console;
+import util.BuyLotto;
 import util.SplitString;
 
 import java.util.List;
