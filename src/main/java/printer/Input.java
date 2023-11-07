@@ -3,7 +3,6 @@ package printer;
 import message.Message;
 
 import camp.nextstep.edu.missionutils.Console;
-import util.BuyLotto;
 import util.SplitString;
 
 import java.util.List;
@@ -28,5 +27,12 @@ public class Input {
         }
 
         return winNumbers;
+    }
+
+    public static int bonusNumber() {
+        System.out.println(Message.INPUT_BONUS_NUMBER.getMessage());
+        String inputBonusNumber = Console.readLine();
+
+        return Integer.parseInt(inputBonusNumber);
     }
 }

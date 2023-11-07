@@ -13,6 +13,8 @@ public class LottoController {
         int sliceOfLotto = BuyLotto.buyLotto(costOfLotto);
         setSliceOfLotto(costOfLotto);
         setLottoLists(sliceOfLotto);
+        setWinNumber();
+        setBonusNumber();
     }
 
     private int setCostOfLotto() {
@@ -25,5 +27,13 @@ public class LottoController {
 
     private void setLottoLists(int sliceOfLotto) {
         Output.buyLists(sliceOfLotto);
+    }
+
+    private void setWinNumber() {
+        Input.winNumber();
+    }
+
+    private void setBonusNumber() {
+        Input.bonusNumber();
     }
 }
